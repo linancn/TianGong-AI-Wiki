@@ -13,7 +13,7 @@ Read the Docs: documentation simplified
    :maxdepth: 2
    :caption: Contents:
 
-   /TianGong-AI-Chat
+   TianGong-AI-Chat
    
 
 .. image:: openai-api-1.png
