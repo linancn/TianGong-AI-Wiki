@@ -50,5 +50,5 @@ pip install -r requirements.txt --upgrade
 ### sphinx
 
 ```bash
-sphinx-autobuild source build/html
+sphinx-autobuild source/ docs/
 ```
