@@ -6,11 +6,14 @@
 Welcome to TianGong-AI-Wiki's documentation!
 ============================================
 
+Read the Docs: documentation simplified
+=======================================
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-   TianGong-AI-Wiki
-   TianGong-AI-Wiki/README
+   /TianGong-AI-Chat
+   
 
 .. image:: openai-api-1.png
