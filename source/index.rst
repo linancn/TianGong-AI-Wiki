@@ -16,4 +16,4 @@ Read the Docs: documentation simplified
    TianGong-AI-Chat
    
 
-.. image:: openai-api-1.png
+.. image:: /_static/openai-api-1.png
