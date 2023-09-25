@@ -10,11 +10,7 @@ Welcome to TianGong-AI-Wiki's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   TianGong-AI-Wiki
+   TianGong-AI-Wiki/README
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. image:: openai-api-1.png
