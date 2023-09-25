@@ -1,5 +1,5 @@
 
-# TianGong AI Wiki
+# TianGong AI Wiki [![Documentation Status](https://readthedocs.org/projects/tiangong-ai-wiki/badge/?version=latest)](https://tiangong-ai-wiki.readthedocs.io/en/latest/?badge=latest)
 
 ## Env Preparing
 
@@ -46,7 +46,6 @@ Install requirements:
 pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 pip install -r requirements.txt --upgrade
 ```
-
 
 ### sphinx
 
