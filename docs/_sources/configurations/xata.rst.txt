@@ -47,34 +47,3 @@ Get your Xata API Key and Database URL in these steps:
       .. code-block:: bash
 
          xata_db_url = "YourURL"
-
-LLM model
-=========
-
-[Details about LLM model configuration]
-
-Password (optional)
-===================
-
-[Description and steps to set up optional password]
-
-Customize Your UI
-=================
-
-Edit the file at:
-
-.. code-block:: text
-
-   ./src/ui/tiangong-en.py
-
-Run Locally
-===========
-
-Use the following command:
-
-.. code-block:: bash
-
-   export ui=tiangong-en
-   streamlit run AI.py
-
-Or, if you're using VS Code, opt for the Debug Streamlit Config.

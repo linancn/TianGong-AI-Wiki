@@ -3,7 +3,7 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-<link rel="author" title="About these documents" href="../about.html" /><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Environment configuration" href="../configurations/env_config.html" /><link rel="prev" title="About" href="../about.html" />
+<link rel="author" title="About these documents" href="../about.html" /><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="OpenAI" href="../configurations/openai.html" /><link rel="prev" title="About" href="../about.html" />
 
     <!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
         <title>TianGong-AI-Chat - TianGong-AI-Wiki documentation</title>
@@ -134,7 +134,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -162,19 +162,17 @@
 <ul class="current">
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">TianGong-AI-Chat</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Environment configuration</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../configurations/env_config.html">Environment configuration</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Key Configurations</span></p>
+<p class="caption" role="heading"><span class="caption-text">Configurations</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../configurations/openai.html">OpenAI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../configurations/pinecone.html">Pinecone</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../configurations/xata.html">Xata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configurations/streamit.html">Streamit deploying</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Custom Configuration</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../configurations/password.html">Password configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configurations/password.html">Password (optional)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configurations/ui.html">Customize Your UI</a></li>
 </ul>
 
 </div>
@@ -203,7 +201,7 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
@@ -211,12 +209,62 @@
         <article role="main">
           <section id="tiangong-ai-chat">
 <h1>TianGong-AI-Chat<a class="headerlink" href="#tiangong-ai-chat" title="Link to this heading">#</a></h1>
-<section id="key-configurations">
-<h2>Key Configurations<a class="headerlink" href="#key-configurations" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Github: <a class="reference external" href="https://github.com/linancn/TianGong-AI-Chat.git">TianGong-AI-Chat</a></p></li>
+</ul>
+<hr class="docutils" />
+<p><strong>Prerequisites</strong>:</p>
+<p>Before we dive in, it’s assumed that you:</p>
 <ol class="arabic simple">
-<li><p><strong>Update Secret Keys</strong>
-- Customize the configuration by copying <code class="docutils literal notranslate"><span class="pre">.streamlit/secrets.dev.toml</span></code> and renaming it to <code class="docutils literal notranslate"><span class="pre">.streamlit/secrets.toml</span></code>, then editing the required parameters as desired:</p></li>
+<li><p>Already have a Python environment set up.</p></li>
+<li><p>Have access to the internet environment required for chatgpt.</p></li>
 </ol>
+<hr class="docutils" />
+<p>Now, let’s get your project up and running!</p>
+<p>Follow these steps to set up and launch the project</p>
+<ol class="arabic">
+<li><p><strong>Setting Up Your Development Environment with VS Code</strong></p>
+<p>We recommend using Visual Studio Code (VS Code) for a smoother development experience.</p>
+<ol class="loweralpha simple">
+<li><p>If you haven’t already, <a class="reference external" href="https://code.visualstudio.com/download">download and install VS Code</a>.</p></li>
+<li><p>Install git on your computer. <a class="reference external" href="https://git-scm.com/downloads">Download and install git</a>.</p></li>
+<li><p>Install the Git extension from the VS Code marketplace for seamless Git integration.</p></li>
+</ol>
+</li>
+<li><p><strong>Download the Project from GitHub using VS Code</strong></p>
+<p>Once you have VS Code set up:</p>
+<ol class="loweralpha simple">
+<li><p>Open VS Code.</p></li>
+<li><p>Press <cite>Ctrl+Shift+P</cite> (or <cite>Cmd+Shift+P</cite> on Mac) to open the command palette.</p></li>
+<li><p>Type and select “Git: Clone” and then paste the GitHub repository URL (<a class="reference external" href="https://github.com/linancn/TianGong-AI-Chat.git">https://github.com/linancn/TianGong-AI-Chat.git</a>).</p></li>
+<li><p>Choose a directory to save the project and VS Code will automatically download (or “clone”) it for you.</p></li>
+</ol>
+</li>
+<li><p><strong>Set Up the Environment</strong></p>
+<ol class="loweralpha simple">
+<li><p>Open a terminal in VS Code by pressing <strong>Ctrl+`</strong> (or <strong>Cmd+`</strong> on Mac).</p></li>
+<li><p>Create a virtual environment by running the following command:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
+</pre></div>
+</div>
+<ol class="loweralpha simple" start="3">
+<li><p>Activate the virtual environment by running the following command:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span><span class="w"> </span>venv/bin/activate
+</pre></div>
+</div>
+<ol class="loweralpha simple" start="4">
+<li><p>Install the required packages by running the following command:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>pip
+pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt<span class="w"> </span>-i<span class="w"> </span>https://pypi.tuna.tsinghua.edu.cn/simple
+pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt<span class="w"> </span>--upgrade
+</pre></div>
+</div>
+</li>
+<li><p><strong>Get Your API Keys</strong></p>
+<p>Customize the configuration by copying <code class="docutils literal notranslate"><span class="pre">.streamlit/secrets.dev.toml</span></code> and renaming it to <code class="docutils literal notranslate"><span class="pre">.streamlit/secrets.toml</span></code>, then editing the required parameters as desired:</p>
 <div class="table-wrapper docutils container">
 <table class="docutils align-default">
 <tbody>
@@ -258,37 +306,39 @@
 <li><p>Tip: Replace every place that says <code class="docutils literal notranslate"><span class="pre">Your*</span></code> with the correct key or information.</p></li>
 </ul>
 </div></blockquote>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">openai_api_key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;YourKeyHere&quot;</span>
-<span class="nv">pinecone_api_key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;YourKeyHere&quot;</span>
-<span class="nv">pinecone_environment</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;YourEnvironmentInfo&quot;</span>
-<span class="nv">pinecone_index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;YourIndexInfo&quot;</span>
-<span class="nv">xata_api_key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;YourKeyHere&quot;</span>
-<span class="nv">xata_db_url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;YourURLHere&quot;</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">openai_api_key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;YourKey&quot;</span>
+<span class="nv">pinecone_api_key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;YourKey&quot;</span>
+<span class="nv">pinecone_environment</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;YourENV&quot;</span>
+<span class="nv">pinecone_index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;YourIndex&quot;</span>
+<span class="nv">xata_api_key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;YourKey&quot;</span>
+<span class="nv">xata_db_url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;YourURL&quot;</span>
 <span class="nv">langchain_verbose</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span>
-<span class="nv">llm_model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;YourModelName&quot;</span>
-<span class="nv">password</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;YourKeyHere&quot;</span>
-<span class="c1"># If needed, set &quot;need_passwd&quot; to True in `tiangong-en.py` at line 2.</span>
+<span class="nv">llm_model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;YourModel&quot;</span>
+<span class="nv">password</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;YourKey&quot;</span>
 </pre></div>
 </div>
-</section>
-<section id="id1">
-<h2>一级标题<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
-<section id="id2">
-<h3>二级标题<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
-<section id="id3">
-<h4>三级标题<a class="headerlink" href="#id3" title="Link to this heading">#</a></h4>
-<section id="id4">
-<h5>四级标题<a class="headerlink" href="#id4" title="Link to this heading">#</a></h5>
-<section id="id5">
-<h6>五级标题<a class="headerlink" href="#id5" title="Link to this heading">#</a></h6>
-<section id="id6">
-<h6 aria-level="7">六级标题<a class="headerlink" href="#id6" title="Link to this heading">#</a></h6>
-</section>
-</section>
-</section>
-</section>
-</section>
-</section>
+</li>
+<li><p><strong>Launch and Deploy</strong></p>
+<ol class="loweralpha simple">
+<li><p>Launch the project by running the following command:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">ui</span><span class="o">=</span>tiangong-en
+streamlit<span class="w"> </span>run<span class="w"> </span>AI.py
+</pre></div>
+</div>
+<p>Or Using VsCode Debug Streamlit Configuration</p>
+<ol class="loweralpha simple" start="2">
+<li><p>Once executed, Streamlit will pop up a new browser window displaying your app. From this interface, you can interact with your project and also share it with others.</p></li>
+<li><p>For detailed steps on deploying and sharing using Streamlit, please refer to the official <a class="reference external" href="https://docs.streamlit.io/streamlit-community-cloud/get-started">Streamlit Get Started guide</a> and this <a class="reference internal" href="../configurations/streamit.html#streamit"><span class="std std-ref">guide</span></a>.</p></li>
+</ol>
+</li>
+</ol>
+<p>That’s it! Your project should now be accessible via the Streamlit interface. Explore, interact, and share as needed!</p>
+<ol class="arabic" start="6">
+<li><p><strong>Customize Your UI</strong></p>
+<p><span class="xref std std-ref">Customize</span> your UI by editing the <code class="docutils literal notranslate"><span class="pre">tiangong-en.py</span></code> file.</p>
+</li>
+</ol>
 </section>
 
         </article>
@@ -296,12 +346,12 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="../configurations/env_config.html">
+          <a class="next-page" href="../configurations/openai.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Environment configuration</div>
+                <div class="title">OpenAI</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -334,43 +384,8 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer">
+    <aside class="toc-drawer no-toc">
       
-      
-      <div class="toc-sticky toc-scroll">
-        <div class="toc-title-container">
-          <span class="toc-title">
-            On this page
-          </span>
-        </div>
-        <div class="toc-tree-container">
-          <div class="toc-tree">
-            <ul>
-<li><a class="reference internal" href="#">TianGong-AI-Chat</a><ul>
-<li><a class="reference internal" href="#key-configurations">Key Configurations</a></li>
-<li><a class="reference internal" href="#id1">一级标题</a><ul>
-<li><a class="reference internal" href="#id2">二级标题</a><ul>
-<li><a class="reference internal" href="#id3">三级标题</a><ul>
-<li><a class="reference internal" href="#id4">四级标题</a><ul>
-<li><a class="reference internal" href="#id5">五级标题</a><ul>
-<li><a class="reference internal" href="#id6">六级标题</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-          </div>
-        </div>
-      </div>
       
       
     </aside>

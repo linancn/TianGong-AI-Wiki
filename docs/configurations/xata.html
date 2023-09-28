@@ -3,7 +3,7 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-<link rel="author" title="About these documents" href="../about.html" /><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Password configuration" href="password.html" /><link rel="prev" title="Pinecone" href="pinecone.html" />
+<link rel="author" title="About these documents" href="../about.html" /><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Streamit deploying" href="streamit.html" /><link rel="prev" title="Pinecone" href="pinecone.html" />
 
     <!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
         <title>Xata - TianGong-AI-Wiki documentation</title>
@@ -134,7 +134,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -162,19 +162,17 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../projects/TianGong-AI-Chat.html">TianGong-AI-Chat</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Environment configuration</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="env_config.html">Environment configuration</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Key Configurations</span></p>
+<p class="caption" role="heading"><span class="caption-text">Configurations</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="openai.html">OpenAI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pinecone.html">Pinecone</a></li>
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Xata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="streamit.html">Streamit deploying</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Custom Configuration</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="password.html">Password configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="password.html">Password (optional)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ui.html">Customize Your UI</a></li>
 </ul>
 
 </div>
@@ -203,7 +201,7 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
@@ -254,30 +252,6 @@ a. Create a new database.</p>
 </ol>
 </li>
 </ol>
-<section id="llm-model">
-<h2>LLM model<a class="headerlink" href="#llm-model" title="Link to this heading">#</a></h2>
-<p>[Details about LLM model configuration]</p>
-</section>
-<section id="password-optional">
-<h2>Password (optional)<a class="headerlink" href="#password-optional" title="Link to this heading">#</a></h2>
-<p>[Description and steps to set up optional password]</p>
-</section>
-<section id="customize-your-ui">
-<h2>Customize Your UI<a class="headerlink" href="#customize-your-ui" title="Link to this heading">#</a></h2>
-<p>Edit the file at:</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>./src/ui/tiangong-en.py
-</pre></div>
-</div>
-</section>
-<section id="run-locally">
-<h2>Run Locally<a class="headerlink" href="#run-locally" title="Link to this heading">#</a></h2>
-<p>Use the following command:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">ui</span><span class="o">=</span>tiangong-en
-streamlit<span class="w"> </span>run<span class="w"> </span>AI.py
-</pre></div>
-</div>
-<p>Or, if you’re using VS Code, opt for the Debug Streamlit Config.</p>
-</section>
 </section>
 
         </article>
@@ -285,12 +259,12 @@ streamlit<span class="w"> </span>run<span class="w"> </span>AI.py
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="password.html">
+          <a class="next-page" href="streamit.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Password configuration</div>
+                <div class="title">Streamit deploying</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -323,30 +297,8 @@ streamlit<span class="w"> </span>run<span class="w"> </span>AI.py
         
       </footer>
     </div>
-    <aside class="toc-drawer">
+    <aside class="toc-drawer no-toc">
       
-      
-      <div class="toc-sticky toc-scroll">
-        <div class="toc-title-container">
-          <span class="toc-title">
-            On this page
-          </span>
-        </div>
-        <div class="toc-tree-container">
-          <div class="toc-tree">
-            <ul>
-<li><a class="reference internal" href="#">Xata</a><ul>
-<li><a class="reference internal" href="#llm-model">LLM model</a></li>
-<li><a class="reference internal" href="#password-optional">Password (optional)</a></li>
-<li><a class="reference internal" href="#customize-your-ui">Customize Your UI</a></li>
-<li><a class="reference internal" href="#run-locally">Run Locally</a></li>
-</ul>
-</li>
-</ul>
-
-          </div>
-        </div>
-      </div>
       
       
     </aside>

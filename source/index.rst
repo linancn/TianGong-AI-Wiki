@@ -18,23 +18,20 @@ Welcome to TianGong-AI-Wiki's documentation!
    :caption: Projects
 
    /projects/TianGong-AI-Chat
-   
-.. toctree::
-   :maxdepth: 2
-   :caption: Environment configuration
-
-   /configurations/env_config
 
 .. toctree::
    :maxdepth: 2
-   :caption: Key Configurations
+   :caption: Configurations
    
    /configurations/openai
    /configurations/pinecone
    /configurations/xata
+   /configurations/streamit
    
 .. toctree:: 
    :maxdepth: 2
    :caption: Custom Configuration
 
    /configurations/password
+   /configurations/ui
+

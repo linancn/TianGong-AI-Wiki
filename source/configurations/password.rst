@@ -1,6 +1,6 @@
 .. _password:
 
 ======================
-Password configuration
+Password (optional)
 ======================
 
