@@ -2,41 +2,39 @@
    sphinx-quickstart on Sun Sep 24 16:16:29 2023.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
-
+   
+============================================
 Welcome to TianGong-AI-Wiki's documentation!
 ============================================
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
-   :caption: About:
+   :caption: About
 
    about  
-      
-
 
 .. toctree::
    :maxdepth: 2
-   :caption: Projects:
+   :caption: Projects
 
-   TianGong-AI-Chat
+   /projects/TianGong-AI-Chat
    
+.. toctree::
+   :maxdepth: 2
+   :caption: Environment configuration
+
+   /configurations/env_config
 
 .. toctree::
    :maxdepth: 2
-   :caption: Environment configuration:
-
-   VSCode
-   Dev Contariners
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Key Configurations:
-
-   OpenAI API key
-   Pinecone
-   Xata
+   :caption: Key Configurations
    
+   /configurations/openai
+   /configurations/pinecone
+   /configurations/xata
+   
+.. toctree:: 
+   :maxdepth: 2
+   :caption: Custom Configuration
 
-
-.. image:: /_static/openai-api-1.png
+   /configurations/password

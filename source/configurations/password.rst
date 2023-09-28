@@ -1,0 +1,4 @@
+.. _password:
+
+password configuration
+======================

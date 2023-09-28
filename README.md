@@ -1,5 +1,5 @@
 
-# TianGong AI Wiki [![Documentation Status](https://readthedocs.org/projects/tiangong-ai-wiki/badge/?version=latest)](https://tiangong-ai-wiki.readthedocs.io/en/latest/?badge=latest)
+# TianGong AI Wiki
 
 ## Env Preparing
 
