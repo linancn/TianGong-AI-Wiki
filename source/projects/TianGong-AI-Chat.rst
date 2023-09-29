@@ -1,72 +1,90 @@
 ================
-TianGong-AI-Chat 
+TianGong AI Chat 
 ================
 
-- Github: `TianGong-AI-Chat <https://github.com/linancn/TianGong-AI-Chat.git>`_
-
---------------------
-
-**Prerequisites**: 
-
-Before we dive in, it's assumed that you:
-
-1. Already have a Python environment set up.
-2. Have access to the internet environment required for chatgpt.
-
---------------------
-
-Now, let's get your project up and running!
-  
-
-Follow these steps to set up and launch the project
+- *This is* `Github Link <https://github.com/linancn/TianGong-AI-Chat.git>`_
 
 
-1. **Setting Up Your Development Environment with VS Code**
+Introduction
+============
+
+- This is a Introduction!
+- Now, let's get your project up and running!
+
+1. Prerequisites
+^^^^^^^^^^^^^^^^
+
+1.1 System Requirements
+-----------------------
+
+- **Operating System:** 
+
+- Windows or MacOS. If you're on Windows, you can use the Windows Subsystem for Linux (WSL).
+
+- **Internet Access:** 
+
+- Have access to the internet environment required for chatgpt.
+
+1.2 Setup and Installation
+--------------------------
+
+- **Python 3.11:**
+
+- Download and install the latest version of Python for your OS from the official website.
+
+- **Visual Studio Code (VS Code):**
+
+- Grab the latest version of this versatile code editor from the VS Code website.
+
+- **GitHub and Git:**
+
+  1. Register for an account on `GitHub <https://github.com/>`_. 
+  2. Install Git:
    
-   We recommend using Visual Studio Code (VS Code) for a smoother development experience.
+  * For Windows: Download the Git setup from the `official site <https://gitforwindows.org/>`_.
+  * For MacOS: You can use Homebrew: ``brew install git``.
 
-   a. If you haven't already, `download and install VS Code <https://code.visualstudio.com/download>`_.
-   b. Install git on your computer. `Download and install git <https://git-scm.com/downloads>`_.
-   c. Install the Git extension from the VS Code marketplace for seamless Git integration.
+  3. Install the Git extension from the VS Code marketplace for seamless Git integration.
 
-2. **Download the Project from GitHub using VS Code**
+1.3 Clone the Project
+--------------------------
+
+  1. Open VS Code.
+  2. Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac) to open the command palette.
+  3. Type and select "Git: Clone" and then paste the GitHub repository URL (https://github.com/linancn/TianGong-AI-Chat.git).
+  4. Choose a directory to save the project and VS Code will automatically download (or "clone") it for you.
+
+1.4 Python Environment
+----------------------------
+
+- **Create a Virtual Environment:**
+
+  1. Open a terminal in VS Code by pressing **Ctrl+`** (or **Cmd+`** on Mac).
+  2. Create a virtual environment by running the following command:
+
+  .. code-block:: bash
+
+     python -m venv .venv
+
+  3. Activate the virtual environment by running the following command:
+
+  .. code-block:: bash
+
+     source venv/bin/activate
+
+- **Install the Required Packages:** - Install the required packages by running the following command:
    
-   Once you have VS Code set up:
-
-   a. Open VS Code.
-   b. Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac) to open the command palette.
-   c. Type and select "Git: Clone" and then paste the GitHub repository URL (https://github.com/linancn/TianGong-AI-Chat.git).
-   d. Choose a directory to save the project and VS Code will automatically download (or "clone") it for you.
-
-3. **Set Up the Environment**
-   
-   a. Open a terminal in VS Code by pressing **Ctrl+`** (or **Cmd+`** on Mac).
-   b. Create a virtual environment by running the following command:
-
    .. code-block:: bash
-
-      python -m venv .venv
-
-   c. Activate the virtual environment by running the following command:
-
-   .. code-block:: bash
    
-      source venv/bin/activate
-   
-   d. Install the required packages by running the following command:
-
-   .. code-block:: bash
-
-      pip install --upgrade pip
-      pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
-      pip install -r requirements.txt --upgrade
+     pip install --upgrade pip
+     pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+     pip install -r requirements.txt --upgrade
 
 
+2. API Key and Configuration
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
-4. **Get Your API Keys**
-   
-   Customize the configuration by copying ``.streamlit/secrets.dev.toml`` and renaming it to ``.streamlit/secrets.toml``, then editing the required parameters as desired:
+- Customize the configuration by copying ``.streamlit/secrets.dev.toml`` and renaming it to ``.streamlit/secrets.toml``, then editing the required parameters as desired:
 
    +----------------------+--------------------------------------------------------------------------------------+
    | Parameter            | Description                                                                          |
@@ -90,7 +108,7 @@ Follow these steps to set up and launch the project
    | password             | Your password. If needed, set "need_passwd" to *True* in `tiangong-en.py` at line 2. |
    +----------------------+--------------------------------------------------------------------------------------+
 
-      - Tip: Replace every place that says ``Your*`` with the correct key or information.
+- Tip: Replace every place that says ``Your*`` with the correct key or information.
 
    .. code-block:: bash
 
@@ -105,27 +123,36 @@ Follow these steps to set up and launch the project
       password = "YourKey"
 
 
-5. **Launch and Deploy**
+3. Launch and Deploy
+^^^^^^^^^^^^^^^^^^^^
 
-   a. Launch the project by running the following command:
-   
-   .. code-block:: bash
+- **Launch the Project:**
 
-      export ui=tiangong-en
-      streamlit run AI.py
+  1. Launch the project by running the following command:
 
-   Or Using VsCode Debug Streamlit Configuration
+  .. code-block:: bash
 
-   b. Once executed, Streamlit will pop up a new browser window displaying your app. From this interface, you can interact with your project and also share it with others.
+     export ui=tiangong-en
+     streamlit run AI.py
 
-   c. For detailed steps on deploying and sharing using Streamlit, please refer to the official `Streamlit Get Started guide <https://docs.streamlit.io/streamlit-community-cloud/get-started>`_ and this :ref:`guide <streamit>`.
+- Or Using VsCode Debug Streamlit Configuration
+
+  2. Once executed, Streamlit will pop up a new browser window displaying your app. From this interface, you can interact with your project and also share it with others.
+
+- **Deploy the Project:**
+
+  1. For detailed steps on deploying and sharing using Streamlit, please refer to the official `Streamlit Get Started guide <https://docs.streamlit.io/streamlit-community-cloud/get-started>`_ and this :ref:`guide <streamit>`.
+
+4. Customize Your UI
+^^^^^^^^^^^^^^^^^^^^
+
 
 That's it! Your project should now be accessible via the Streamlit interface. Explore, interact, and share as needed!
 
 
-6. **Customize Your UI**
+1. **Customize Your UI**
 
-   You can customize your UI by :ref:`Customize <ui>`
+   
 
 
 

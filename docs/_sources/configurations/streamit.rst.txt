@@ -1,5 +1,5 @@
 .. _streamit:
 
 ==================
-Streamit deploying
+Streamit
 ==================

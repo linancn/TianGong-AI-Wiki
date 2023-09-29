@@ -1,7 +1,7 @@
 .. _ui:
 
 =================
-Customize Your UI
+Customization
 =================
 
 Edit the file at:

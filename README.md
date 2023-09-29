@@ -1,6 +1,8 @@
 
 # TianGong AI Wiki
 
+https://linancn.github.io/TianGong-AI-Wiki/
+
 ## Env Preparing
 
 ### Using VSCode Dev Contariners
