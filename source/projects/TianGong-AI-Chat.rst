@@ -125,7 +125,7 @@ That's it! Your project should now be accessible via the Streamlit interface. Ex
 
 6. **Customize Your UI**
 
-   :ref:`Customize <ui>` your UI by editing the ``tiangong-en.py`` file.
+   You can customize your UI by :ref:`Customize <ui>`
 
 
 

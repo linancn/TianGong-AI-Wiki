@@ -10,18 +10,21 @@ Welcome to TianGong-AI-Wiki's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: About
+   :hidden:
 
    about  
 
 .. toctree::
    :maxdepth: 2
    :caption: Projects
+   :hidden:
 
    /projects/TianGong-AI-Chat
 
 .. toctree::
    :maxdepth: 2
    :caption: Configurations
+   :hidden:
    
    /configurations/openai
    /configurations/pinecone
@@ -31,6 +34,7 @@ Welcome to TianGong-AI-Wiki's documentation!
 .. toctree:: 
    :maxdepth: 2
    :caption: Custom Configuration
+   :hidden:
 
    /configurations/password
    /configurations/ui
