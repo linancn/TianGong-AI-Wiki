@@ -1,5 +1,5 @@
 .. _tgagent:
 
 ==================
-TianGong Agent
+TianGong AI Agent
 ==================

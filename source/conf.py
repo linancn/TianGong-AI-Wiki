@@ -39,7 +39,6 @@ html_theme_options = {
     "sidebar_hide_name": True,
     "light_logo": "logo.svg",
     "dark_logo": "logo.svg",
-    # "top_of_page_button": "edit",
     "announcement": "<em>Welcome to TianGong AI Wiki’s documentation!</em>",
     "footer_icons": [
         {
