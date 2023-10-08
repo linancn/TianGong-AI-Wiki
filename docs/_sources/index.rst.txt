@@ -9,47 +9,32 @@ Welcome to TianGong AI Wiki's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: 🚀 Project's Guide 
-   :hidden:
+   :caption: 🚀 Get Started 
 
-   /projects/TianGong-AI-Chat
-   /projects/TianGong-AI-Agent
-
-.. toctree:: 
-   :maxdepth: 2
-   :caption: 🛠 Prerequisites
-   :hidden:
-
-   /prerequisites/python
-   /prerequisites/vscode
-   /prerequisites/github
-   /prerequisites/git
+   /overview
+   /sysenv/index
+   /prerequisites/index
 
 .. toctree::
    :maxdepth: 2
-   :caption: 🔑 Key Configurations
-   :hidden:
+   :caption: 🛠 Projects 
+
+   /projects/Chat
+   /projects/Agent
+
+.. .. toctree:: 
+..    :maxdepth: 2
+..    :caption: 🚦 Launch and Deploy
+
+..    /launch-and-deploy/launch
+..    /launch-and-deploy/deploy
    
-   /configurations/openai
-   /configurations/pinecone
-   /configurations/xata
-   /configurations/streamit
+.. .. toctree:: 
+..    :maxdepth: 2
+..    :caption: 🎨 Customization
 
-.. toctree:: 
-   :maxdepth: 2
-   :caption: 🚦 Launch and Deploy
-   :hidden:
-
-   /launch-and-deploy/launch
-   /launch-and-deploy/deploy
-   
-.. toctree:: 
-   :maxdepth: 2
-   :caption: 🎨 Customization
-   :hidden:
-
-   /configurations/password
-   /configurations/ui
+..    /configurations/password
+..    /configurations/ui
 
 
 -------------------

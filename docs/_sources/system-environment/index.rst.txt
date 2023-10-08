@@ -1,0 +1,13 @@
+=====================
+Environment
+=====================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Environment Prerequisites:
+
+   /system-environment/WSL2
+   /system-environment/Git
+   /system-environment/Python
+   /system-environment/VSCode
+   /system-environment/Docker

@@ -21,6 +21,7 @@ extensions = [
     "sphinx.ext.mathjax",
     "sphinx.ext.napoleon",
     "sphinx.ext.todo",
+    "sphinx_tabs.tabs",
 ]
 
 templates_path = ["_templates"]
@@ -39,7 +40,7 @@ html_theme_options = {
     "sidebar_hide_name": True,
     "light_logo": "logo.svg",
     "dark_logo": "logo.svg",
-    "announcement": "<em>Welcome to TianGong AI Wiki’s documentation!</em>",
+    # "announcement": "<em>Welcome to TianGong AI Wiki’s documentation!</em>",
     "footer_icons": [
         {
             "name": "GitHub",
