@@ -108,21 +108,21 @@ Configuration
   +----------------------+--------------------------------------------------------------------------------------+
   | Parameter            | Description                                                                          |
   +----------------------+--------------------------------------------------------------------------------------+
-  | openai_api_key       | Your OpenAI API key, you can get it from :ref:`here <openai>`                        |
+  | openai_api_key       | Your :ref:`OpenAI API key <openai>`                                                  |
   +----------------------+--------------------------------------------------------------------------------------+
-  | pinecone_api_key     | Your Pinecone API key,you can get it from :ref:`here <pinecone>`                     |
+  | pinecone_api_key     | Your :ref:`Pinecone API key <pinecone>`                                              |
   +----------------------+--------------------------------------------------------------------------------------+
-  | pinecone_environment | Details about your Pinecone environment                                              |
+  | pinecone_environment | Details about your :ref:`Pinecone environment <pinecone>`                            |
   +----------------------+--------------------------------------------------------------------------------------+
-  | pinecone_index       | Information about your Pinecone index                                                |
+  | pinecone_index       | Information about your :ref:`Pinecone index <pinecone>`                              |
   +----------------------+--------------------------------------------------------------------------------------+
-  | xata_api_key         | Your Xata API key                                                                    |
+  | xata_api_key         | Your :ref:`Xata API key <xata>`                                                      |
   +----------------------+--------------------------------------------------------------------------------------+
-  | xata_db_url          | The URL for your Xata database                                                       |
+  | xata_db_url          | The :ref:`URL <xata>` for your Xata database                                         |
   +----------------------+--------------------------------------------------------------------------------------+
-  | langchain_verbose    | Indicates if Langchain should be verbose (true/false)                                |
+  | langchain_verbose    | Indicates if Langchain should be verbose (true/false). Default is *true*.            |
   +----------------------+--------------------------------------------------------------------------------------+
-  | llm_model            | The name of your LLM model                                                           |
+  | llm_model            | The name of your LLM model. Default is *gpt-4*.                                      |
   +----------------------+--------------------------------------------------------------------------------------+
   | password (optional)  | Your password. If needed, set "need_passwd" to *True* in `tiangong-en.py` at line 2. |
   +----------------------+--------------------------------------------------------------------------------------+
