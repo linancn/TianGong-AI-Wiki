@@ -1,12 +1,11 @@
-================
+.. _chat:
+
+====
 Chat 
-================
+====
 
-- This is the *Chat* project`s `Github Link <https://github.com/linancn/TianGong-AI-Chat.git>`_. You can clink `here <https://newchat.tiangong.world/>`_  to view *TianGong Chat* application.
+This is the *Chat* project`s `Github Link <https://github.com/linancn/TianGong-AI-Chat.git>`_. You can clink `here <https://newchat.tiangong.world/>`_  to view a sample application.
 
-.. tip:: 
-  1. Before going any further, make sure your system meets all the :ref:`Environment <sysenv>` and :ref:`Prerequisites <prerequisites>`.
-  2. Have access to the internet environment required for chatgpt.
    
 Introduction
 ============
@@ -20,19 +19,143 @@ Chat Application is a web application that allows users to chat with AI.
 
 .. It is based on the OpenAI GPT-4 model and uses the Pinecone database to store the knowledge database. It also uses the Xata to store the user's history information. The application is built using the Streamlit framework and is deployed using Streamlit Sharing.
 
+.. _prerequisites:
 
-.. chat的安装方法
+Prerequisites
+=============
+
+Required Software
+^^^^^^^^^^^^^^^^^
+
+WSL2
+----
+.. tabs::
+
+   .. group-tab:: Windows
+
+      WSL2 is specific to Windows.
+
+      Follow the `official installation guide <https://docs.microsoft.com/en-us/windows/wsl/install>`_.
+
+   .. group-tab:: MacOS
+
+      Not applicable. Skip this step.
+
+   .. group-tab:: Linux
+
+      Not applicable. Skip this step.
+
+Docker
+------
+.. tabs::
+
+   .. group-tab:: Windows
+
+      Download and install Docker from the `official website <https://docs.docker.com/get-docker/>`_.
+
+   .. group-tab:: MacOS
+
+      Download and install Docker from the `official website <https://docs.docker.com/get-docker/>`_.
+
+   .. group-tab:: Linux
+
+      Download and install Docker from the `official website <https://docs.docker.com/get-docker/>`_.
+
+VS Code
+-------
+.. tabs::
+
+   .. group-tab:: Windows
+
+      Download and install Visual Studio Code from the `official website <https://code.visualstudio.com/download>`_.
+
+   .. group-tab:: MacOS
+
+      Download and install Visual Studio Code from the `official website <https://code.visualstudio.com/download>`_.
+
+   .. group-tab:: Linux
+
+      Download and install Visual Studio Code from the `official website <https://code.visualstudio.com/download>`_.
+
+
+
+Git
+---
+.. tabs::
+
+   .. group-tab:: Windows
+
+      Download and install from `Git for Windows <https://gitforwindows.org/>`_.
+
+   .. group-tab:: MacOS
+
+      Use the built-in Terminal and run `git --version` to see if Git is installed. If not, you'll be prompted to install it.
+
+   .. group-tab:: Linux
+
+      Use your distribution's package manager, e.g., `sudo apt-get install git` for Ubuntu/Debian.
+
+Required Services
+^^^^^^^^^^^^^^^^^
+
+GitHub
+------
+Sign up for an account on the [GitHub website](https://github.com/). For detailed usage instructions, refer to the [official documentation](https://docs.github.com/en/github).
+
+LLM
+---
+
+OpenAI
+>>>>>>>
+
+Visit the [OpenAI platform](https://platform.openai.com/signup) to sign up. Explore the [official documentation](https://beta.openai.com/docs/) for API usage and other details.
+
+Vector database
+---------------
+
+Pinecone
+>>>>>>>>
+
+[Sign up](URL_NEEDED) for a Pinecone account. Reference the official documentation [here](URL_NEEDED) for a detailed guide.
+
+History database
+----------------
+
+Xata
+>>>>
+
+(Note: URL and specific sign-up instructions needed. Link to official documentation if available.)
+
+Auth & Subscription
+-------------------
+
+Wix
+>>>>
+
+
+Supporting frameworks
+---------------------
+
+Langchain
+>>>>>>>>>
+
+Streamlit
+>>>>>>>>>
+
+Visit `Streamlit <https://www.streamlit.io/>`_ to understand its capabilities. Detailed usage and deployment instructions can be found in the `official documentation <https://docs.streamlit.io/latest/index.html>`_.
+
+
 
 Installation
 ============
 
+.. tip:: 
+    Before going any further, make sure your system meets all the :ref:`Prerequisites <prerequisites>`.
 
 Clone the Project
 ^^^^^^^^^^^^^^^^^
 
 1. Run Visual Studio Code and open the command palette. 
-
-
 
 
 .. tabs::
@@ -56,9 +179,6 @@ Clone the Project
 2. Type and select ``Git: Clone``, then paste the GitHub repository URL *(https://github.com/linancn/TianGong-AI-Chat.git)*.
 
 3. Choose a directory to save the project (such as ``/home/uesr/projects/``), and VS Code will automatically download (or "clone") it for you.
-
-.. tip:: 
-  Install the recommended extensions form the VS Code marketplace.
 
 Virtual Environment
 ^^^^^^^^^^^^^^^^^^^
@@ -168,6 +288,26 @@ Launch
 
 Deploy
 ======
+
+.. 如何发布自己的项目
+
+.. 1. 启动后，点击右上角的Deploy按钮
+
+.. 2. 点击Deploy now按钮
+
+.. 3. 注册或登录自己的streamlit账号
+
+.. 4. 发布一个app
+
+.. 4.1 Repository、Branch、Main file path、App URL (Optional)
+
+.. 4.2 Advanced settings
+
+.. 4.2.1 Python version=3.11
+
+.. 4.2.2 Secrets：把.streamlit/secrets.toml的内容粘贴在蓝色框内，点击保存
+
+.. 4.3 点击Deploy按钮
 
 1. Upon run or launch the application, click on the "Deploy" button in the top right corner.
 

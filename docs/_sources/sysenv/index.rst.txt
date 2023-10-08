@@ -1,5 +1,3 @@
-.. _sysenv:
-
 ===========
 Environment
 ===========
@@ -8,11 +6,10 @@ Environment
    :maxdepth: 2
    :caption: Environment Prerequisites:
 
-   /sysenv/WSL2
-   /sysenv/Git
-   /sysenv/Python
-   /sysenv/VSCode
-   /sysenv/Docker
+   /sysenv/wsl2
+   /sysenv/git
+   /sysenv/vscode
+   /sysenv/docker
 
 
 

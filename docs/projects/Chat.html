@@ -167,7 +167,10 @@
   <p class="caption" role="heading"><span class="caption-text">🚀 Get Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../overview.html">Overview</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../sysenv/index.html">Environment</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Environment</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="simple">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../sysenv/index.html">Environment</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Environment</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../sysenv/wsl2.html">WSL2 (Windows Subsystem for Linux)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sysenv/git.html">Git and GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sysenv/docker.html">Docker</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../prerequisites/index.html">Prerequisites</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Prerequisites</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -217,17 +220,8 @@
         </div>
         <article role="main">
           <section id="chat">
-<h1>Chat<a class="headerlink" href="#chat" title="Link to this heading">#</a></h1>
-<ul class="simple">
-<li><p>This is the <em>Chat</em> project`s <a class="reference external" href="https://github.com/linancn/TianGong-AI-Chat.git">Github Link</a>. You can clink <a class="reference external" href="https://newchat.tiangong.world/">here</a>  to view <em>TianGong Chat</em> application.</p></li>
-</ul>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<ol class="arabic simple">
-<li><p>Before going any further, make sure your system meets all the <a class="reference internal" href="../sysenv/index.html#sysenv"><span class="std std-ref">Environment</span></a> and <a class="reference internal" href="../prerequisites/index.html#prerequisites"><span class="std std-ref">Prerequisites</span></a>.</p></li>
-<li><p>Have access to the internet environment required for chatgpt.</p></li>
-</ol>
-</div>
+<span id="id1"></span><h1>Chat<a class="headerlink" href="#chat" title="Link to this heading">#</a></h1>
+<p>This is the <em>Chat</em> project`s <a class="reference external" href="https://github.com/linancn/TianGong-AI-Chat.git">Github Link</a>. You can clink <a class="reference external" href="https://newchat.tiangong.world/">here</a>  to view a sample application.</p>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
 <section id="what-is-chat">
@@ -235,20 +229,107 @@
 <p>Chat Application is a web application that allows users to chat with AI.</p>
 </section>
 </section>
+<section id="prerequisites">
+<span id="id2"></span><h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading">#</a></h2>
+<section id="required-software">
+<h3>Required Software<a class="headerlink" href="#required-software" title="Link to this heading">#</a></h3>
+<section id="wsl2">
+<h4>WSL2<a class="headerlink" href="#wsl2" title="Link to this heading">#</a></h4>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-V2luZG93cw==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-0-V2luZG93cw==" name="V2luZG93cw==" role="tab" tabindex="0">Windows</button><button aria-controls="panel-0-TWFjT1M=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-TWFjT1M=" name="TWFjT1M=" role="tab" tabindex="-1">MacOS</button><button aria-controls="panel-0-TGludXg=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-TGludXg=" name="TGludXg=" role="tab" tabindex="-1">Linux</button></div><div aria-labelledby="tab-0-V2luZG93cw==" class="sphinx-tabs-panel group-tab" id="panel-0-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><p>WSL2 is specific to Windows.</p>
+<p>Follow the <a class="reference external" href="https://docs.microsoft.com/en-us/windows/wsl/install">official installation guide</a>.</p>
+</div><div aria-labelledby="tab-0-TWFjT1M=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-TWFjT1M=" name="TWFjT1M=" role="tabpanel" tabindex="0"><p>Not applicable. Skip this step.</p>
+</div><div aria-labelledby="tab-0-TGludXg=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-TGludXg=" name="TGludXg=" role="tabpanel" tabindex="0"><p>Not applicable. Skip this step.</p>
+</div></div>
+</section>
+<section id="docker">
+<h4>Docker<a class="headerlink" href="#docker" title="Link to this heading">#</a></h4>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-1-V2luZG93cw==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-1-V2luZG93cw==" name="V2luZG93cw==" role="tab" tabindex="0">Windows</button><button aria-controls="panel-1-TWFjT1M=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-1-TWFjT1M=" name="TWFjT1M=" role="tab" tabindex="-1">MacOS</button><button aria-controls="panel-1-TGludXg=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-1-TGludXg=" name="TGludXg=" role="tab" tabindex="-1">Linux</button></div><div aria-labelledby="tab-1-V2luZG93cw==" class="sphinx-tabs-panel group-tab" id="panel-1-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><p>Download and install Docker from the <a class="reference external" href="https://docs.docker.com/get-docker/">official website</a>.</p>
+</div><div aria-labelledby="tab-1-TWFjT1M=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-1-TWFjT1M=" name="TWFjT1M=" role="tabpanel" tabindex="0"><p>Download and install Docker from the <a class="reference external" href="https://docs.docker.com/get-docker/">official website</a>.</p>
+</div><div aria-labelledby="tab-1-TGludXg=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-1-TGludXg=" name="TGludXg=" role="tabpanel" tabindex="0"><p>Download and install Docker from the <a class="reference external" href="https://docs.docker.com/get-docker/">official website</a>.</p>
+</div></div>
+</section>
+<section id="vs-code">
+<h4>VS Code<a class="headerlink" href="#vs-code" title="Link to this heading">#</a></h4>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-2-V2luZG93cw==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-2-V2luZG93cw==" name="V2luZG93cw==" role="tab" tabindex="0">Windows</button><button aria-controls="panel-2-TWFjT1M=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-2-TWFjT1M=" name="TWFjT1M=" role="tab" tabindex="-1">MacOS</button><button aria-controls="panel-2-TGludXg=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-2-TGludXg=" name="TGludXg=" role="tab" tabindex="-1">Linux</button></div><div aria-labelledby="tab-2-V2luZG93cw==" class="sphinx-tabs-panel group-tab" id="panel-2-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><p>Download and install Visual Studio Code from the <a class="reference external" href="https://code.visualstudio.com/download">official website</a>.</p>
+</div><div aria-labelledby="tab-2-TWFjT1M=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-2-TWFjT1M=" name="TWFjT1M=" role="tabpanel" tabindex="0"><p>Download and install Visual Studio Code from the <a class="reference external" href="https://code.visualstudio.com/download">official website</a>.</p>
+</div><div aria-labelledby="tab-2-TGludXg=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-2-TGludXg=" name="TGludXg=" role="tabpanel" tabindex="0"><p>Download and install Visual Studio Code from the <a class="reference external" href="https://code.visualstudio.com/download">official website</a>.</p>
+</div></div>
+</section>
+<section id="git">
+<h4>Git<a class="headerlink" href="#git" title="Link to this heading">#</a></h4>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-3-V2luZG93cw==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-3-V2luZG93cw==" name="V2luZG93cw==" role="tab" tabindex="0">Windows</button><button aria-controls="panel-3-TWFjT1M=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-3-TWFjT1M=" name="TWFjT1M=" role="tab" tabindex="-1">MacOS</button><button aria-controls="panel-3-TGludXg=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-3-TGludXg=" name="TGludXg=" role="tab" tabindex="-1">Linux</button></div><div aria-labelledby="tab-3-V2luZG93cw==" class="sphinx-tabs-panel group-tab" id="panel-3-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><p>Download and install from <a class="reference external" href="https://gitforwindows.org/">Git for Windows</a>.</p>
+</div><div aria-labelledby="tab-3-TWFjT1M=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-3-TWFjT1M=" name="TWFjT1M=" role="tabpanel" tabindex="0"><p>Use the built-in Terminal and run <cite>git –version</cite> to see if Git is installed. If not, you’ll be prompted to install it.</p>
+</div><div aria-labelledby="tab-3-TGludXg=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-3-TGludXg=" name="TGludXg=" role="tabpanel" tabindex="0"><p>Use your distribution’s package manager, e.g., <cite>sudo apt-get install git</cite> for Ubuntu/Debian.</p>
+</div></div>
+</section>
+</section>
+<section id="required-services">
+<h3>Required Services<a class="headerlink" href="#required-services" title="Link to this heading">#</a></h3>
+<section id="github">
+<h4>GitHub<a class="headerlink" href="#github" title="Link to this heading">#</a></h4>
+<p>Sign up for an account on the [GitHub website](<a class="reference external" href="https://github.com/">https://github.com/</a>). For detailed usage instructions, refer to the [official documentation](<a class="reference external" href="https://docs.github.com/en/github">https://docs.github.com/en/github</a>).</p>
+</section>
+<section id="llm">
+<h4>LLM<a class="headerlink" href="#llm" title="Link to this heading">#</a></h4>
+<section id="openai">
+<h5>OpenAI<a class="headerlink" href="#openai" title="Link to this heading">#</a></h5>
+<p>Visit the [OpenAI platform](<a class="reference external" href="https://platform.openai.com/signup">https://platform.openai.com/signup</a>) to sign up. Explore the [official documentation](<a class="reference external" href="https://beta.openai.com/docs/">https://beta.openai.com/docs/</a>) for API usage and other details.</p>
+</section>
+</section>
+<section id="vector-database">
+<h4>Vector database<a class="headerlink" href="#vector-database" title="Link to this heading">#</a></h4>
+<section id="pinecone">
+<h5>Pinecone<a class="headerlink" href="#pinecone" title="Link to this heading">#</a></h5>
+<p>[Sign up](URL_NEEDED) for a Pinecone account. Reference the official documentation [here](URL_NEEDED) for a detailed guide.</p>
+</section>
+</section>
+<section id="history-database">
+<h4>History database<a class="headerlink" href="#history-database" title="Link to this heading">#</a></h4>
+<section id="xata">
+<h5>Xata<a class="headerlink" href="#xata" title="Link to this heading">#</a></h5>
+<p>(Note: URL and specific sign-up instructions needed. Link to official documentation if available.)</p>
+</section>
+</section>
+<section id="auth-subscription">
+<h4>Auth &amp; Subscription<a class="headerlink" href="#auth-subscription" title="Link to this heading">#</a></h4>
+<section id="wix">
+<h5>Wix<a class="headerlink" href="#wix" title="Link to this heading">#</a></h5>
+</section>
+</section>
+<section id="supporting-frameworks">
+<h4>Supporting frameworks<a class="headerlink" href="#supporting-frameworks" title="Link to this heading">#</a></h4>
+<section id="langchain">
+<h5>Langchain<a class="headerlink" href="#langchain" title="Link to this heading">#</a></h5>
+</section>
+<section id="streamlit">
+<h5>Streamlit<a class="headerlink" href="#streamlit" title="Link to this heading">#</a></h5>
+<p>Visit <a class="reference external" href="https://www.streamlit.io/">Streamlit</a> to understand its capabilities. Detailed usage and deployment instructions can be found in the <a class="reference external" href="https://docs.streamlit.io/latest/index.html">official documentation</a>.</p>
+</section>
+</section>
+</section>
+</section>
 <section id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Before going any further, make sure your system meets all the <a class="reference internal" href="#prerequisites"><span class="std std-ref">Prerequisites</span></a>.</p>
+</div>
 <section id="clone-the-project">
 <h3>Clone the Project<a class="headerlink" href="#clone-the-project" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Run Visual Studio Code and open the command palette.</p></li>
 </ol>
 <div class="sphinx-tabs docutils container">
-<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-V2luZG93cyBXU0wy" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-0-V2luZG93cyBXU0wy" name="V2luZG93cyBXU0wy" role="tab" tabindex="0">Windows WSL2</button><button aria-controls="panel-0-TWFjT1M=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-TWFjT1M=" name="TWFjT1M=" role="tab" tabindex="-1">MacOS</button></div><div aria-labelledby="tab-0-V2luZG93cyBXU0wy" class="sphinx-tabs-panel group-tab" id="panel-0-V2luZG93cyBXU0wy" name="V2luZG93cyBXU0wy" role="tabpanel" tabindex="0"><p>Make sure you have WSL2 installed. If not, follow the <a class="reference external" href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">instructions</a>.</p>
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-4-V2luZG93cyBXU0wy" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-4-V2luZG93cyBXU0wy" name="V2luZG93cyBXU0wy" role="tab" tabindex="0">Windows WSL2</button><button aria-controls="panel-4-TWFjT1M=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-4-TWFjT1M=" name="TWFjT1M=" role="tab" tabindex="-1">MacOS</button></div><div aria-labelledby="tab-4-V2luZG93cyBXU0wy" class="sphinx-tabs-panel group-tab" id="panel-4-V2luZG93cyBXU0wy" name="V2luZG93cyBXU0wy" role="tabpanel" tabindex="0"><p>Make sure you have WSL2 installed. If not, follow the <a class="reference external" href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">instructions</a>.</p>
 <p>Run Visual Studio Code in WSL using the WSL extension. You can read more about it from <a class="reference external" href="https://code.visualstudio.com/docs/remote/wsl-tutorial">here</a>.</p>
 <blockquote>
 <div><p>Ctrl+Shift+P # open the command palette</p>
 </div></blockquote>
-</div><div aria-labelledby="tab-0-TWFjT1M=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-TWFjT1M=" name="TWFjT1M=" role="tabpanel" tabindex="0"><p>We recommend using the VSCode Dev Contariners.</p>
+</div><div aria-labelledby="tab-4-TWFjT1M=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-4-TWFjT1M=" name="TWFjT1M=" role="tabpanel" tabindex="0"><p>We recommend using the VSCode Dev Contariners.</p>
 <p>Before proceeding, make sure you have Docker and the VS Code Dev Containers extension set up. You can read more about it from <a class="reference external" href="https://code.visualstudio.com/docs/devcontainers/tutorial">here</a>.</p>
 <blockquote>
 <div><p>Cmd+Shift+P # open the command palette</p>
@@ -258,10 +339,6 @@
 <li><p>Type and select <code class="docutils literal notranslate"><span class="pre">Git:</span> <span class="pre">Clone</span></code>, then paste the GitHub repository URL <em>(https://github.com/linancn/TianGong-AI-Chat.git)</em>.</p></li>
 <li><p>Choose a directory to save the project (such as <code class="docutils literal notranslate"><span class="pre">/home/uesr/projects/</span></code>), and VS Code will automatically download (or “clone”) it for you.</p></li>
 </ol>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Install the recommended extensions form the VS Code marketplace.</p>
-</div>
 </section>
 <section id="virtual-environment">
 <h3>Virtual Environment<a class="headerlink" href="#virtual-environment" title="Link to this heading">#</a></h3>
@@ -307,9 +384,9 @@ pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </s
 <ul class="simple">
 <li><p>Customize the configuration by copying <code class="docutils literal notranslate"><span class="pre">.streamlit/secrets.dev.toml</span></code> and renaming it to <code class="docutils literal notranslate"><span class="pre">.streamlit/secrets.toml</span></code>, then editing the required parameters as desired:</p></li>
 </ul>
-<div class="table-wrapper docutils container" id="id3">
-<table class="docutils align-default" id="id3">
-<caption><span class="caption-text">Configuration Parameters</span><a class="headerlink" href="#id3" title="Link to this table">#</a></caption>
+<div class="table-wrapper docutils container" id="id11">
+<table class="docutils align-default" id="id11">
+<caption><span class="caption-text">Configuration Parameters</span><a class="headerlink" href="#id11" title="Link to this table">#</a></caption>
 <tbody>
 <tr class="row-odd"><td><p>Parameter</p></td>
 <td><p>Description</p></td>
@@ -497,6 +574,41 @@ pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </s
 <li><a class="reference internal" href="#">Chat</a><ul>
 <li><a class="reference internal" href="#introduction">Introduction</a><ul>
 <li><a class="reference internal" href="#what-is-chat">What is Chat?</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#prerequisites">Prerequisites</a><ul>
+<li><a class="reference internal" href="#required-software">Required Software</a><ul>
+<li><a class="reference internal" href="#wsl2">WSL2</a></li>
+<li><a class="reference internal" href="#docker">Docker</a></li>
+<li><a class="reference internal" href="#vs-code">VS Code</a></li>
+<li><a class="reference internal" href="#git">Git</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#required-services">Required Services</a><ul>
+<li><a class="reference internal" href="#github">GitHub</a></li>
+<li><a class="reference internal" href="#llm">LLM</a><ul>
+<li><a class="reference internal" href="#openai">OpenAI</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#vector-database">Vector database</a><ul>
+<li><a class="reference internal" href="#pinecone">Pinecone</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#history-database">History database</a><ul>
+<li><a class="reference internal" href="#xata">Xata</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#auth-subscription">Auth &amp; Subscription</a><ul>
+<li><a class="reference internal" href="#wix">Wix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#supporting-frameworks">Supporting frameworks</a><ul>
+<li><a class="reference internal" href="#langchain">Langchain</a></li>
+<li><a class="reference internal" href="#streamlit">Streamlit</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a class="reference internal" href="#installation">Installation</a><ul>

@@ -1,8 +1,8 @@
 .. _vscode:
 
-==================
+=======
 VS Code  
-==================
+=======
 
 :download:`download <https://code.visualstudio.com/>`
 
