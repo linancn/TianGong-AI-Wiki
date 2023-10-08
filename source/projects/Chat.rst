@@ -30,25 +30,32 @@ Installation
 Clone the Project
 ^^^^^^^^^^^^^^^^^
 
-1. Run Visual Studio Code in WSL using the WSL extension. You can read more about it from `here <https://code.visualstudio.com/docs/remote/wsl-tutorial>`_.
+1. Run Visual Studio Code and open the command palette. 
 
-2. Open the command palette. 
+
+
 
 .. tabs::
 
-   .. group-tab:: Windows
-      .. code-block:: bash
+   .. group-tab:: Windows WSL2
 
-         Ctrl+Shift+P
+    Make sure you have WSL2 installed. If not, follow the `instructions <https://docs.microsoft.com/en-us/windows/wsl/install-win10>`_.
+
+    Run Visual Studio Code in WSL using the WSL extension. You can read more about it from `here <https://code.visualstudio.com/docs/remote/wsl-tutorial>`_.
+
+      Ctrl+Shift+P # open the command palette
 
    .. group-tab:: MacOS
-      .. code-block:: bash
 
-         Cmd+Shift+P
+    We recommend using the VSCode Dev Contariners. 
+    
+    Before proceeding, make sure you have Docker and the VS Code Dev Containers extension set up. You can read more about it from `here <https://code.visualstudio.com/docs/devcontainers/tutorial>`_.
 
-3. Type and select ``Git: Clone``, then paste the GitHub repository URL *(https://github.com/linancn/TianGong-AI-Chat.git)*.
+      Cmd+Shift+P # open the command palette
 
-4. Choose a directory to save the project (such as ``/home/uesr/projects/``), and VS Code will automatically download (or "clone") it for you.
+2. Type and select ``Git: Clone``, then paste the GitHub repository URL *(https://github.com/linancn/TianGong-AI-Chat.git)*.
+
+3. Choose a directory to save the project (such as ``/home/uesr/projects/``), and VS Code will automatically download (or "clone") it for you.
 
 .. tip:: 
   Install the recommended extensions form the VS Code marketplace.
