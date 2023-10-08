@@ -360,84 +360,72 @@ pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </s
 <section id="customization">
 <h2>Customization<a class="headerlink" href="#customization" title="Link to this heading">#</a></h2>
 </section>
-<section id="launch-and-deploy">
-<h2>Launch and Deploy<a class="headerlink" href="#launch-and-deploy" title="Link to this heading">#</a></h2>
 <section id="launch">
-<h3>Launch<a class="headerlink" href="#launch" title="Link to this heading">#</a></h3>
-<ul>
-<li><p><strong>Launch the Project:</strong></p>
+<h2>Launch<a class="headerlink" href="#launch" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>Launch the project by running the following command:</p></li>
 </ol>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">ui</span><span class="o">=</span>tiangong-en
-streamlit<span class="w"> </span>run<span class="w"> </span>./src/AI.py
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>streamlit<span class="w"> </span>run<span class="w"> </span>./src/AI.py
 </pre></div>
 </div>
-</li>
-<li><p>Or Using VsCode Debug Streamlit Configuration</p>
+<ul class="simple">
+<li><p>Or Using VsCode Debug Streamlit Configuration</p></li>
+</ul>
 <ol class="arabic simple" start="2">
 <li><p>Once executed, Streamlit will pop up a new browser window displaying your app. From this interface, you can interact with your project and also share it with others.</p></li>
 </ol>
-</li>
-</ul>
-</section>
 </section>
 <section id="deploy">
 <h2>Deploy<a class="headerlink" href="#deploy" title="Link to this heading">#</a></h2>
-<section id="click-on-the-deploy-button">
-<h3>Click on the “Deploy” button<a class="headerlink" href="#click-on-the-deploy-button" title="Link to this heading">#</a></h3>
-<p>Upon run or launch the application, click on the “Deploy” button in the top right corner.</p>
+<ol class="arabic simple">
+<li><p>Upon run or launch the application, click on the “Deploy” button in the top right corner.</p></li>
+</ol>
 <img alt="../_images/deploy-1.png" src="../_images/deploy-1.png" />
-</section>
-<section id="click-the-deploy-now-button">
-<h3>Click the “Deploy now” button<a class="headerlink" href="#click-the-deploy-now-button" title="Link to this heading">#</a></h3>
+<ol class="arabic simple" start="2">
+<li><p>Click the “Deploy now” button</p></li>
+</ol>
 <img alt="../_images/deploy-2.png" src="../_images/deploy-2.png" />
-</section>
-<section id="log-in-streamlit-account">
-<h3>Log in Streamlit account<a class="headerlink" href="#log-in-streamlit-account" title="Link to this heading">#</a></h3>
-<p>Sign up or log in to your Streamlit account</p>
+<ol class="arabic simple" start="3">
+<li><p>Sign up or log in to your Streamlit account</p></li>
+</ol>
 <img alt="../_images/deploy-3.png" src="../_images/deploy-3.png" />
-</section>
-<section id="deploy-an-app">
-<h3>Deploy an app<a class="headerlink" href="#deploy-an-app" title="Link to this heading">#</a></h3>
-<section id="fill-in-the-fields">
-<h4>Fill in the fields<a class="headerlink" href="#fill-in-the-fields" title="Link to this heading">#</a></h4>
+<ol class="arabic simple" start="4">
+<li><p>Deploy an app</p></li>
+</ol>
+<ul class="simple">
+<li><p><strong>Fill in the fields</strong></p></li>
+</ul>
 <img alt="../_images/deploy-4.png" src="../_images/deploy-4.png" />
-<section id="repository">
-<h5>Repository<a class="headerlink" href="#repository" title="Link to this heading">#</a></h5>
-<p>Select the repository you want to deploy. Default is the <strong>current repository</strong>.</p>
-</section>
-<section id="branch">
-<h5>Branch<a class="headerlink" href="#branch" title="Link to this heading">#</a></h5>
-<p>Select the branch you want to deploy. Default is <strong>main</strong>.</p>
-</section>
-<section id="main-file-path">
-<h5>Main file path<a class="headerlink" href="#main-file-path" title="Link to this heading">#</a></h5>
-<p>Set the path to the main Python script that runs your app. Keep the default settings.</p>
-</section>
-<section id="app-url-optional">
-<h5>App URL (Optional)<a class="headerlink" href="#app-url-optional" title="Link to this heading">#</a></h5>
-<p>Set the URL where your app will be deployed. Default is <strong>https://share.streamlit.io/your-username/your-repo-name</strong>.</p>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p>Parameter</p></td>
+<td><p>Description</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Repository</strong></p></td>
+<td><p>Select the repository you want to deploy. Default is the <em>current repository</em>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Branch</strong></p></td>
+<td><p>Select the branch you want to deploy. Default is <em>main</em>.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Main file path</strong></p></td>
+<td><p>Set the path to the main Python script that runs your app. Keep the default settings.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>App URL (Optional)</strong></p></td>
+<td><p>Set the URL where your app will be deployed. Default is <em>https://share.streamlit.io/your-username/your-repo-name</em>.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <p>You can change the URL to something more memorable, like <strong>aichat-example.streamlit.app</strong>.</p>
-</section>
-</section>
-<section id="navigate-to-advanced-settings">
-<h4>Navigate to Advanced settings<a class="headerlink" href="#navigate-to-advanced-settings" title="Link to this heading">#</a></h4>
-<section id="python-version">
-<h5>Python version<a class="headerlink" href="#python-version" title="Link to this heading">#</a></h5>
-<p>Set Python version to 3.11.</p>
+<ul class="simple">
+<li><p><strong>Python version</strong>: Set Python version to 3.11.</p></li>
+</ul>
 <img alt="../_images/deploy-5.png" src="../_images/deploy-5.png" />
-</section>
-<section id="set-secrets">
-<h5>Set Secrets<a class="headerlink" href="#set-secrets" title="Link to this heading">#</a></h5>
-<p>Under “Secrets”, paste the contents of <em>.streamlit/secrets.toml</em> into the blue box and click “Save”.</p>
-</section>
-</section>
-<section id="click-the-deploy">
-<h4>Click the “Deploy”<a class="headerlink" href="#click-the-deploy" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>Set Secrets</strong>: Under “Secrets”, paste the contents of <code class="docutils literal notranslate"><span class="pre">.streamlit/secrets.toml</span></code> into the blue box and click “Save”.</p></li>
+</ul>
 <p>Successfully deploy your first app!</p>
-</section>
-</section>
 </section>
 </section>
 
@@ -516,32 +504,8 @@ streamlit<span class="w"> </span>run<span class="w"> </span>./src/AI.py
 </li>
 <li><a class="reference internal" href="#configuration">Configuration</a></li>
 <li><a class="reference internal" href="#customization">Customization</a></li>
-<li><a class="reference internal" href="#launch-and-deploy">Launch and Deploy</a><ul>
 <li><a class="reference internal" href="#launch">Launch</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#deploy">Deploy</a><ul>
-<li><a class="reference internal" href="#click-on-the-deploy-button">Click on the “Deploy” button</a></li>
-<li><a class="reference internal" href="#click-the-deploy-now-button">Click the “Deploy now” button</a></li>
-<li><a class="reference internal" href="#log-in-streamlit-account">Log in Streamlit account</a></li>
-<li><a class="reference internal" href="#deploy-an-app">Deploy an app</a><ul>
-<li><a class="reference internal" href="#fill-in-the-fields">Fill in the fields</a><ul>
-<li><a class="reference internal" href="#repository">Repository</a></li>
-<li><a class="reference internal" href="#branch">Branch</a></li>
-<li><a class="reference internal" href="#main-file-path">Main file path</a></li>
-<li><a class="reference internal" href="#app-url-optional">App URL (Optional)</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#navigate-to-advanced-settings">Navigate to Advanced settings</a><ul>
-<li><a class="reference internal" href="#python-version">Python version</a></li>
-<li><a class="reference internal" href="#set-secrets">Set Secrets</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#click-the-deploy">Click the “Deploy”</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li><a class="reference internal" href="#deploy">Deploy</a></li>
 </ul>
 </li>
 </ul>

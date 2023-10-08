@@ -146,91 +146,62 @@ Customization
 
 .. 设置
 
-Launch and Deploy
-=================
-
 Launch
-^^^^^^
+======
 
-- **Launch the Project:**
+1. Launch the project by running the following command:
 
-  1. Launch the project by running the following command:
+.. code-block:: bash
 
-  .. code-block:: bash
-
-     export ui=tiangong-en
-     streamlit run ./src/AI.py
+   streamlit run ./src/AI.py
 
 - Or Using VsCode Debug Streamlit Configuration
 
-  2. Once executed, Streamlit will pop up a new browser window displaying your app. From this interface, you can interact with your project and also share it with others.
+2. Once executed, Streamlit will pop up a new browser window displaying your app. From this interface, you can interact with your project and also share it with others.
 
 Deploy
 ======
 
-Click on the "Deploy" button
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Upon run or launch the application, click on the "Deploy" button in the top right corner.
+1. Upon run or launch the application, click on the "Deploy" button in the top right corner.
 
 .. image:: /_static/deploy-1.png
 
-Click the "Deploy now" button
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2. Click the "Deploy now" button
 
 .. image:: /_static/deploy-2.png
 
-Log in Streamlit account
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Sign up or log in to your Streamlit account
+3. Sign up or log in to your Streamlit account
 
 .. image:: /_static/deploy-3.png
 
-Deploy an app
-^^^^^^^^^^^^^^^^^^^^
+4. Deploy an app
 
-Fill in the fields
----------------------
+- **Fill in the fields**
 
 .. image:: /_static/deploy-4.png
 
-Repository
->>>>>>>>>> 
-
-Select the repository you want to deploy. Default is the **current repository**.
-
-Branch
->>>>>>
-
-Select the branch you want to deploy. Default is **main**.
-
-Main file path
->>>>>>>>>>>>>>
-
-Set the path to the main Python script that runs your app. Keep the default settings. 
-
-App URL (Optional)
->>>>>>>>>>>>>>>>>>
-
-Set the URL where your app will be deployed. Default is **https://share.streamlit.io/your-username/your-repo-name**. 
++------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Parameter              | Description                                                                                                        |
++------------------------+--------------------------------------------------------------------------------------------------------------------+
+| **Repository**         | Select the repository you want to deploy. Default is the *current repository*.                                     |
++------------------------+--------------------------------------------------------------------------------------------------------------------+
+| **Branch**             | Select the branch you want to deploy. Default is *main*.                                                           |
++------------------------+--------------------------------------------------------------------------------------------------------------------+
+| **Main file path**     | Set the path to the main Python script that runs your app. Keep the default settings.                              |
++------------------------+--------------------------------------------------------------------------------------------------------------------+
+| **App URL (Optional)** | Set the URL where your app will be deployed. Default is *https://share.streamlit.io/your-username/your-repo-name*. |
++------------------------+--------------------------------------------------------------------------------------------------------------------+
 
 You can change the URL to something more memorable, like **aichat-example.streamlit.app**.
 
 Navigate to Advanced settings
 -----------------------------
 
-Python version
->>>>>>>>>>>>>>
-
-Set Python version to 3.11.
+- **Python version**: Set Python version to 3.11.
 
 .. image:: /_static/deploy-5.png
 
-Set Secrets
->>>>>>>>>>>
-
-Under "Secrets", paste the contents of *.streamlit/secrets.toml* into the blue box and click "Save".
+- **Set Secrets**: Under "Secrets", paste the contents of ``.streamlit/secrets.toml`` into the blue box and click "Save".
 
 Click the "Deploy"
 -------------------------

@@ -15,42 +15,20 @@ def generate_rst_table(headers, data):
     return '\n'.join(lines)
 
 headers = ['Parameter', 'Description']
-data = [
-    ['openai_api_key', 'Your OpenAI API key, you can get it from :ref:`here <openai>`'], 
-    ['pinecone_api_key', 'Your Pinecone API key,you can get it from :ref:`here <pinecone>`'], 
-    ['pinecone_environment', 'Details about your Pinecone environment'], 
-    ['pinecone_index', 'Information about your Pinecone index'], 
-    ['xata_api_key', 'Your Xata API key'], 
-    ['xata_db_url', 'The URL for your Xata database'], 
-    ['langchain_verbose', 'Indicates if Langchain should be verbose (true/false)'], 
-    ['llm_model', 'The name of your LLM model'], 
-    ['password', 'Your password. If needed, set "need_passwd" to *True* in `tiangong-en.py` at line 2.'],
-]
+data = [['**Repository**', 'Select the repository you want to deploy. Default is the *current repository*.'], ['**Branch**', 'Select the branch you want to deploy. Default is *main*.'], ['**Main file path**', 'Set the path to the main Python script that runs your app. Keep the default settings.'], ['**App URL (Optional)**', 'Set the URL where your app will be deployed. Default is *https://share.streamlit.io/your-username/your-repo-name*.']]
 
 print(generate_rst_table(headers, data))
 
 # rst_table = """
-# +-----------------------+-----------------------------------------------------------------+
-# | Parameter             | Description                                                     |
-# +-----------------------+-----------------------------------------------------------------+
-# | openai_api_key        | Your OpenAI API key, you can get it from :ref:`here <openai>`   |
-# +-----------------------+-----------------------------------------------------------------+
-# | pinecone_api_key      | Your Pinecone API key,you can get it from :ref:`here <pinecone>`|
-# +-----------------------+-----------------------------------------------------------------+
-# | pinecone_environment  | Details about your Pinecone environment                         |
-# +-----------------------+-----------------------------------------------------------------+
-# | pinecone_index        | Information about your Pinecone index                           |
-# +-----------------------+-----------------------------------------------------------------+
-# | xata_api_key          | Your Xata API key                                               |
-# +-----------------------+-----------------------------------------------------------------+
-# | xata_db_url           | The URL for your Xata database                                  |
-# +-----------------------+-----------------------------------------------------------------+
-# | langchain_verbose     | Indicates if Langchain should be verbose (true/false)           |
-# +-----------------------+-----------------------------------------------------------------+
-# | llm_model             | The name of your LLM model                                      |
-# +-----------------------+-----------------------------------------------------------------+
-# | password              | Your password. If needed, set "need_passwd" to *True* in `tiangong-en.py` at line 2.|
-# +-----------------------+-----------------------------------------------------------------+
+# +-----------------+--------------------------------------------------------------------------------------------------+
+# | **Repository**  | Select the repository you want to deploy. Default is the *current repository*.                 |
+# +-----------------+--------------------------------------------------------------------------------------------------+
+# | **Branch**      | Select the branch you want to deploy. Default is *main*.                                       |
+# +-----------------+--------------------------------------------------------------------------------------------------+
+# | **Main file path**   | Set the path to the main Python script that runs your app. Keep the default settings.            |
+# +-----------------+--------------------------------------------------------------------------------------------------+
+# | **App URL (Optional)**     | Set the URL where your app will be deployed. Default is *https://share.streamlit.io/your-username/your-repo-name*.       |
+# +-----------------+--------------------------------------------------------------------------------------------------+
 # """
 
 # lines = rst_table.strip().split("\n")
