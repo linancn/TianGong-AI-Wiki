@@ -33,9 +33,17 @@ WSL2
 
    .. group-tab:: Windows
 
-      WSL2 is specific to Windows.
+      You need to be running on Windows 10 version 2004 and higher (Build 19041 and higher) or Windows 11. Follow the `instructions <https://docs.microsoft.com/en-us/windows/wsl/install-win10>`_ to install WSL2.
 
-      Follow the `official installation guide <https://docs.microsoft.com/en-us/windows/wsl/install>`_.
+      **Recommendation:** We recommend using the Microsoft Store for its seamless installation, automatic updates, and verified security. 
+      
+      → To get the latest release of **Ubuntu 20.04.6 LTS**, simply search for it in the store.
+
+      .. image:: /_static/wsl2-1.png
+         :height: 300px
+         :align: center
+
+      
 
    .. group-tab:: MacOS
 
@@ -44,6 +52,8 @@ WSL2
    .. group-tab:: Linux
 
       Not applicable. Skip this step.
+
+
 
 Docker
 ------
@@ -158,27 +168,32 @@ Clone the Project
 1. Run Visual Studio Code and open the command palette. 
 
 
-.. tabs::
+.. .. tabs::
 
-   .. group-tab:: Windows WSL2
+..    .. group-tab:: Windows
 
-    Make sure you have WSL2 installed. If not, follow the `instructions <https://docs.microsoft.com/en-us/windows/wsl/install-win10>`_.
+..     Make sure you have WSL2 installed. If not, follow the `instructions <https://docs.microsoft.com/en-us/windows/wsl/install-win10>`_.
 
-    Run Visual Studio Code in WSL using the WSL extension. You can read more about it from `here <https://code.visualstudio.com/docs/remote/wsl-tutorial>`_.
+..     Run Visual Studio Code in WSL using the WSL extension. You can read more about it from `here <https://code.visualstudio.com/docs/remote/wsl-tutorial>`_.
 
-      Ctrl+Shift+P # open the command palette
+..       Ctrl+Shift+P # open the command palette
 
-   .. group-tab:: MacOS
+..    .. group-tab:: MacOS
 
-    We recommend using the VSCode Dev Contariners. 
+..     We recommend using the VSCode Dev Contariners. 
     
-    Before proceeding, make sure you have Docker and the VS Code Dev Containers extension set up. You can read more about it from `here <https://code.visualstudio.com/docs/devcontainers/tutorial>`_.
+..     Before proceeding, make sure you have Docker and the VS Code Dev Containers extension set up. You can read more about it from `here <https://code.visualstudio.com/docs/devcontainers/tutorial>`_.
 
-      Cmd+Shift+P # open the command palette
+..       Cmd+Shift+P # open the command palette
+
+..    .. group-tab:: Linux
+
+..       Ctrl+Shift+P # open the command palette
+
 
 2. Type and select ``Git: Clone``, then paste the GitHub repository URL *(https://github.com/linancn/TianGong-AI-Chat.git)*.
 
-3. Choose a directory to save the project (such as ``/home/uesr/projects/``), and VS Code will automatically download (or "clone") it for you.
+#. Choose a directory to save the project (such as ``/home/uesr/projects/``), and VS Code will automatically download (or "clone") it for you.
 
 Virtual Environment
 ^^^^^^^^^^^^^^^^^^^
@@ -209,7 +224,7 @@ Install the required packages
 .. code-block:: bash
 
   pip install -r requirements.txt
-  # Optional: Using the Tsinghua Mirror (Recommended for users in China):
+  # If you encounter network connectivity issues, it's recommended to use the Tsinghua mirror or another suitable source.
   pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 3. Upgrade packages

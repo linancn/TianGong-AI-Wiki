@@ -236,8 +236,10 @@
 <section id="wsl2">
 <h4>WSL2<a class="headerlink" href="#wsl2" title="Link to this heading">#</a></h4>
 <div class="sphinx-tabs docutils container">
-<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-V2luZG93cw==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-0-V2luZG93cw==" name="V2luZG93cw==" role="tab" tabindex="0">Windows</button><button aria-controls="panel-0-TWFjT1M=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-TWFjT1M=" name="TWFjT1M=" role="tab" tabindex="-1">MacOS</button><button aria-controls="panel-0-TGludXg=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-TGludXg=" name="TGludXg=" role="tab" tabindex="-1">Linux</button></div><div aria-labelledby="tab-0-V2luZG93cw==" class="sphinx-tabs-panel group-tab" id="panel-0-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><p>WSL2 is specific to Windows.</p>
-<p>Follow the <a class="reference external" href="https://docs.microsoft.com/en-us/windows/wsl/install">official installation guide</a>.</p>
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-V2luZG93cw==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-0-V2luZG93cw==" name="V2luZG93cw==" role="tab" tabindex="0">Windows</button><button aria-controls="panel-0-TWFjT1M=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-TWFjT1M=" name="TWFjT1M=" role="tab" tabindex="-1">MacOS</button><button aria-controls="panel-0-TGludXg=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-TGludXg=" name="TGludXg=" role="tab" tabindex="-1">Linux</button></div><div aria-labelledby="tab-0-V2luZG93cw==" class="sphinx-tabs-panel group-tab" id="panel-0-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><p>You need to be running on Windows 10 version 2004 and higher (Build 19041 and higher) or Windows 11. Follow the <a class="reference external" href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">instructions</a> to install WSL2.</p>
+<p><strong>Recommendation:</strong> We recommend using the Microsoft Store for its seamless installation, automatic updates, and verified security.</p>
+<p>→ To get the latest release of <strong>Ubuntu 20.04.6 LTS</strong>, simply search for it in the store.</p>
+<a class="reference internal image-reference" href="../_images/wsl2-1.png"><img alt="../_images/wsl2-1.png" class="align-center" src="../_images/wsl2-1.png" style="height: 300px;" /></a>
 </div><div aria-labelledby="tab-0-TWFjT1M=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-TWFjT1M=" name="TWFjT1M=" role="tabpanel" tabindex="0"><p>Not applicable. Skip this step.</p>
 </div><div aria-labelledby="tab-0-TGludXg=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-TGludXg=" name="TGludXg=" role="tabpanel" tabindex="0"><p>Not applicable. Skip this step.</p>
 </div></div>
@@ -323,18 +325,6 @@
 <ol class="arabic simple">
 <li><p>Run Visual Studio Code and open the command palette.</p></li>
 </ol>
-<div class="sphinx-tabs docutils container">
-<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-4-V2luZG93cyBXU0wy" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-4-V2luZG93cyBXU0wy" name="V2luZG93cyBXU0wy" role="tab" tabindex="0">Windows WSL2</button><button aria-controls="panel-4-TWFjT1M=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-4-TWFjT1M=" name="TWFjT1M=" role="tab" tabindex="-1">MacOS</button></div><div aria-labelledby="tab-4-V2luZG93cyBXU0wy" class="sphinx-tabs-panel group-tab" id="panel-4-V2luZG93cyBXU0wy" name="V2luZG93cyBXU0wy" role="tabpanel" tabindex="0"><p>Make sure you have WSL2 installed. If not, follow the <a class="reference external" href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">instructions</a>.</p>
-<p>Run Visual Studio Code in WSL using the WSL extension. You can read more about it from <a class="reference external" href="https://code.visualstudio.com/docs/remote/wsl-tutorial">here</a>.</p>
-<blockquote>
-<div><p>Ctrl+Shift+P # open the command palette</p>
-</div></blockquote>
-</div><div aria-labelledby="tab-4-TWFjT1M=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-4-TWFjT1M=" name="TWFjT1M=" role="tabpanel" tabindex="0"><p>We recommend using the VSCode Dev Contariners.</p>
-<p>Before proceeding, make sure you have Docker and the VS Code Dev Containers extension set up. You can read more about it from <a class="reference external" href="https://code.visualstudio.com/docs/devcontainers/tutorial">here</a>.</p>
-<blockquote>
-<div><p>Cmd+Shift+P # open the command palette</p>
-</div></blockquote>
-</div></div>
 <ol class="arabic simple" start="2">
 <li><p>Type and select <code class="docutils literal notranslate"><span class="pre">Git:</span> <span class="pre">Clone</span></code>, then paste the GitHub repository URL <em>(https://github.com/linancn/TianGong-AI-Chat.git)</em>.</p></li>
 <li><p>Choose a directory to save the project (such as <code class="docutils literal notranslate"><span class="pre">/home/uesr/projects/</span></code>), and VS Code will automatically download (or “clone”) it for you.</p></li>
@@ -367,7 +357,7 @@
 <li><p>Install packages</p></li>
 </ol>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
-<span class="c1"># Optional: Using the Tsinghua Mirror (Recommended for users in China):</span>
+<span class="c1"># If you encounter network connectivity issues, it&#39;s recommended to use the Tsinghua mirror or another suitable source.</span>
 pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt<span class="w"> </span>-i<span class="w"> </span>https://pypi.tuna.tsinghua.edu.cn/simple
 </pre></div>
 </div>
@@ -384,9 +374,9 @@ pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </s
 <ul class="simple">
 <li><p>Customize the configuration by copying <code class="docutils literal notranslate"><span class="pre">.streamlit/secrets.dev.toml</span></code> and renaming it to <code class="docutils literal notranslate"><span class="pre">.streamlit/secrets.toml</span></code>, then editing the required parameters as desired:</p></li>
 </ul>
-<div class="table-wrapper docutils container" id="id11">
-<table class="docutils align-default" id="id11">
-<caption><span class="caption-text">Configuration Parameters</span><a class="headerlink" href="#id11" title="Link to this table">#</a></caption>
+<div class="table-wrapper docutils container" id="id9">
+<table class="docutils align-default" id="id9">
+<caption><span class="caption-text">Configuration Parameters</span><a class="headerlink" href="#id9" title="Link to this table">#</a></caption>
 <tbody>
 <tr class="row-odd"><td><p>Parameter</p></td>
 <td><p>Description</p></td>
