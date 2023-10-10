@@ -34,7 +34,7 @@ Welcome
 
 .. toctree::
    :maxdepth: 2
-   :caption: 🔗 TianGong AI Ecosystem 
+   :caption: 🔗 TianGong AI Universe 
 
-   /ecosystem/tiangong-ai
-   /ecosystem/kaiwu
+   /universe/tiangong-ai
+   /universe/kaiwu
