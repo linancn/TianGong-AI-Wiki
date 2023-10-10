@@ -19,24 +19,18 @@
   body {
     --color-code-background: #f8f8f8;
   --color-code-foreground: black;
-  --color-brand-primary: #743481;
-  --color-brand-content: #743481;
   
   }
   @media not print {
     body[data-theme="dark"] {
       --color-code-background: #202020;
   --color-code-foreground: #d0d0d0;
-  --color-brand-primary: #743481;
-  --color-brand-content: #743481;
   
     }
     @media (prefers-color-scheme: dark) {
       body:not([data-theme="light"]) {
         --color-code-background: #202020;
   --color-code-foreground: #d0d0d0;
-  --color-brand-primary: #743481;
-  --color-brand-content: #743481;
   
       }
     }
@@ -154,7 +148,7 @@
   
   <div class="sidebar-logo-container">
     <img class="sidebar-logo only-light" src="../../_static/logo-ai.png" alt="Light Logo"/>
-    <img class="sidebar-logo only-dark" src="../../_static/logo-ai.png" alt="Dark Logo"/>
+    <img class="sidebar-logo only-dark" src="../../_static/logo-ai-dark.png" alt="Dark Logo"/>
   </div>
   
   
@@ -278,29 +272,12 @@ Utilizes the Retrieval Augmented Generation (RAG) method, allowing chatbots to e
 <section id="let-s-get-started">
 <h2>Let’s get started<a class="headerlink" href="#let-s-get-started" title="Link to this heading">#</a></h2>
 <div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">Unlock the power of Chat with 4 simple steps</span></p>
+<p class="caption" role="heading"><span class="caption-text">Unlock the power of Chat with simple steps</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#create-project-directory">Create Project Directory</a></li>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#clone-git-repository">Clone Git Repository</a></li>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#setup-project">Setup Project</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="configuration.html#creating-secrets-toml">Creating <cite>secrets.toml</cite></a></li>
-<li class="toctree-l2"><a class="reference internal" href="configuration.html#parameters">Parameters</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="customization.html">Customization</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="customization.html#text-and-locale">Text and Locale</a></li>
-<li class="toctree-l2"><a class="reference internal" href="customization.html#image">Image</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="launch-deploy.html">Launch and Deploy</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="launch-deploy.html#launch">Launch</a></li>
-<li class="toctree-l2"><a class="reference internal" href="launch-deploy.html#deploy">Deploy</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="customization.html">Customization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="launch-deploy.html">Launch and Deploy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="docs.html">Docs</a></li>
 </ul>
 </div>

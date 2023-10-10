@@ -39,7 +39,7 @@ html_static_path = ["_static"]
 html_theme_options = {
     "sidebar_hide_name": True,
     "light_logo": "logo-ai.png",
-    "dark_logo": "logo-ai.png",
+    "dark_logo": "logo-ai-dark.png",
     # "announcement": "<em>Welcome to TianGong AI Wiki’s documentation!</em>",
     "footer_icons": [
         {
@@ -53,13 +53,4 @@ html_theme_options = {
             "class": "",
         },
     ],
-    "light_css_variables": {
-        "color-brand-primary": "#743481",
-        "color-brand-content": "#743481",
-    },
-    "dark_css_variables": {
-        "color-brand-primary": "#743481",
-        "color-brand-content": "#743481",
-    },
-
 }

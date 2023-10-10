@@ -31,8 +31,8 @@ Let's get started
 ============
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Unlock the power of Chat with 4 simple steps
+   :maxdepth: 1
+   :caption: Unlock the power of Chat with simple steps
 
    /projects/chat/installation
    /projects/chat/configuration
