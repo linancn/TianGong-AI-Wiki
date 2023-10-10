@@ -38,8 +38,8 @@ html_static_path = ["_static"]
 
 html_theme_options = {
     "sidebar_hide_name": True,
-    "light_logo": "logo.svg",
-    "dark_logo": "logo.svg",
+    "light_logo": "logo-ai.png",
+    "dark_logo": "logo-ai.png",
     # "announcement": "<em>Welcome to TianGong AI Wiki’s documentation!</em>",
     "footer_icons": [
         {

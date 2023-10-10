@@ -4,53 +4,30 @@
    contain the root `toctree` directive.
    
 ============================================
-Welcome to TianGong AI Wiki's documentation!
+Welcome
 ============================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: 🚀 Get Started 
 
    /overview
-   /sysenv/index
    /prerequisites/index
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: 🛠 Projects 
 
-   /projects/Chat
-   /projects/Agent
+   /projects/chat/index
+   /projects/agent/index
+   /projects/chatgpt-plugin/index
+   /projects/kb/index
 
-.. .. toctree:: 
-..    :maxdepth: 2
-..    :caption: 🚦 Launch and Deploy
+.. toctree::
+   :maxdepth: 1
+   :caption:  Supported Services 
 
-..    /launch-and-deploy/launch
-..    /launch-and-deploy/deploy
-   
-.. .. toctree:: 
-..    :maxdepth: 2
-..    :caption: 🎨 Customization
-
-..    /configurations/password
-..    /configurations/ui
-
-
--------------------
-
-天工paper
-^^^^^^^^^^
-
-- click `tiangong-paper <https://paper.tiangong.world/>`_
-
-
-天工Chat
-^^^^^^^^^^
-
-- click `tiangong-chat <https://newchat.tiangong.world/>`_
-
-天工AI Pro
-^^^^^^^^^^
-
-- click `tiangong-ai-pro <https://ai-pro.tiangong.world/>`_
+   /services/llms/index.rst
+   /services/vectordb/index.rst
+   /services/memory/index.rst
+   /services/frontend/index.rst
