@@ -16,7 +16,7 @@ Welcome
 
 .. toctree::
    :maxdepth: 1
-   :caption: 🛠 Projects 
+   :caption: 🌐 Projects 
 
    /projects/chat/index
    /projects/agent/index
@@ -25,9 +25,16 @@ Welcome
 
 .. toctree::
    :maxdepth: 1
-   :caption:  Supported Services 
+   :caption: 🛠 Supported Services 
 
-   /services/llms/index.rst
-   /services/vectordb/index.rst
-   /services/memory/index.rst
-   /services/frontend/index.rst
+   /services/llms/index
+   /services/vectordb/index
+   /services/memory/index
+   /services/frontend/index
+
+.. toctree::
+   :maxdepth: 2
+   :caption: 🔗 TianGong AI Ecosystem 
+
+   /ecosystem/tiangong-ai
+   /ecosystem/kaiwu
